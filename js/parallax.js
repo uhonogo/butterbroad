@@ -3,7 +3,7 @@ $(document).ready(function(argument) {
 		var lr = $(this).scrollTop();
 
 		$(".img").css({
-			transform : "translateY("+lr/20 +'%)'
+			transform : "translateY(-"+lr/20 +'%)'
 		});
 	})
 });
