@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Bad+Script|Roboto|Ubuntu:300')
+
+$whc: #ffffff
+
+body
+	width: 100%
+	background: #fefefe
+	font-family: 'Marck Script'
+	font-size: 24pt
+	margin: 0
+	padding: 0
+
+div,
+li,
+footer
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+	-webkit-box-sizing: border-box
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin: 0
+
+li
+	list-style: none
+
+div,
+header,
+section,
+footer
+	position: relative
+
+section,
+footer
+	z-index: 2
+
+.content
+	min-height: 2000px
+
+.content,
+.block-width
+	width: 100%
+
+.white-bg-col
+	background: white
+
+//-- NAV --//
+
+.top-menu
+	position: fixed
+	width: 30px
+	z-index: 9999
+	top: calc(50% - 71.5px)
+
+.top-menu ul
+	width: 100%
+	height: auto
+	margin: 0
+	padding: 0
+
+.top-menu li
+	display: block
+.top-menu li a,
+	display: block
+	width: 17px
+	height: 17px
+	margin: 15px 0 15px 30px
+	background-color: #b9ccd1
+	border-radius: 50%
+
+
+a.current
+	transition: .1s ease-in-out
+	background: #51cd00 !important
+
+//-- END NAV--//
+
+//******** Header ********//
+
+.parallax
+	height: 100vh
+	z-index: 1
+	position: absolute
+	overflow: hidden
+
+.img
+	width: 100%
+	height: 100%
+	display: block
+	position: relative
+	background: url(../images/step1.jpg) no-repeat
+	background-position: 0 30% 
+	background-attachment: fixed
+
+.head
+	height: 100vh
+	background: rgba(0,0,0, .1)
+	z-index: 2
+
+.logo
+	position: absolute
+	width: 300px
+	top: 3%
+	left: 1%
+
+.desc
+	width: 47%
+	height: 100%
+	float: right
+	border-radius: 50% 0 0 50%
+	padding: 15% 0 0 20%
+
+.desc p
+	text-align: right
+	width: 70%
+	height: auto
+
+//******** End header ********//
+
+//******** CONTENT ********//
+
+//******** curls ********//
+.how-cook
+	height: 100vh
+	font-family: 'Bad Script'
+	font-size: 0
+
+.curl
+	padding: 30px
+	text-align: center
+
+.curl img
+	width: 250px
+	display: inline-block
+
+.bottom
+	position: absolute
+	bottom: 0
+	width: 100%
+
+//******** end curls ********//
+
+h1
+	font-weight: normal
+	font-size: 45pt
+	text-align: center
+.row
+	width: 100%
+	height: 300px
+	position: absolute
+	top: calc(60% - 150px)
+
+.column
+	font-size: 24pt
+	display: inline-block
+	width: 50%
+
+.column ul
+	margin: 0
+	padding: 0
+
+.ing
+	text-align: right
+	padding-right: 3%
+	width: 100%
+	border-right: 1px solid black
+
+.ing-desc
+	padding-left: 3%
+	width: 100%
+
+.first-step
+	height: 100vh
+	overflow: hidden
+	width: 100%
+	background: white url(../images/step2.jpg) no-repeat right top
+	background-size: auto 100%
+	z-index: 1
+
+.fstp-instr
+	z-index: 2
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0, .1)
+
+.fstp-desc
+	width: 47%
+	height: 100%
+	border-radius: 0 25% 25% 0
+	padding: 20% 4% 0 9%
+
+.desc p
+	text-align: right
+	width: 70%
+	height: auto
+
+.second-step
+	height: auto
+
+.last-desc
+	position: absolute
+	z-index: 2
+	height: 480px
+	padding-top: 10% 
+	border-radius: 0 0 50% 50%
+	text-align: center
+
+.last-desc p
+	display: inline-block
+	width: 50%
+	text-align: center
+
+.step3
+	width: 100%
+	height: 100vh
+	overflow: hidden
+	background: white url(../images/step3.jpg) no-repeat 0 0
+	background-size: cover
+	background-attachment: fixed
+	z-index: 1
+
+.img-step3
+	position: absolute
+	height: 100%
+	width: 100%
+	background: rgba(0,0,0, .3)
+
+//******** END CONTENT ********//
+
+//******** FOOTER ********//
+
+footer
+	height: 200px
+	text-align: center
+	padding-top: 2%
+
+footer a
+	color: red
+	text-decoration: none
+
+//******** END FOOTER ********//

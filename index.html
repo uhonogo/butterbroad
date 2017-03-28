@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- style -->
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>buterbroad</title>
+</head>
+<body>
+	<nav class="top-menu">
+        <ul>
+            <li><a class="current" href="#a"></a></li>
+            <li><a href="#b"></a></li>
+            <li><a href="#c"></a></li>
+            <li><a href="#d"></a></li>
+        </ul>
+    </nav>
+	<div class="content">
+		<!-- ******** HEADER ******** -->	
+		<div class="parallax block-width">
+			<div class="img"></div>
+		</div>
+		<header id="a" class="head block-width">
+			<div class="logo">
+				<img src="images/logo.svg" alt="logo">
+			</div>
+			<div class="desc white-bg-col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam blanditiis dolorem dignissimos, quaerat quae officiis velit saepe aliquam voluptates provident explicabo nihil dolore. Dolorum at a nam, sapiente eveniet.</p>
+			</div>
+		</header>
+		
+		<!-- ****** CONTENT ****** -->
+		
+		<section id="b" class="how-cook block-width white-bg-col">
+			<div class="curl">
+				<img src="images/curl-top.svg" alt="curl">
+			</div>
+			<h1>Рецепт:</h1>
+			<div class="row">
+				<div class="column">
+					<ul>
+						<li class="ing">Превый ингридиент:</li>
+						<li class="ing">Воторой ингридиент:</li>
+						<li class="ing">Третий ингридиент:</li>
+					</ul>
+				</div>
+				<div class="column">
+					<ul>
+						<li class="ing-desc">описание первого</li>
+						<li class="ing-desc">описание втогрого</li>
+						<li class="ing-desc">описание третьего</li>
+					</ul>
+				</div>
+			</div>
+			<div class="curl bottom">
+				<img src="images/curl-bottom.svg" alt="curl">
+			</div>
+		</section>
+		<section id="c" class="first-step block-width">
+			<div class="fstp-instr">
+				<div class="fstp-desc white-bg-col">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dicta quisquam similique enim provident delectus reiciendis esse dolores facere amet consequuntur sint tempore consequatur, est fugit pariatur quibusdam quas, nihil?</p>
+				</div>
+			</div>
+		</section>
+		<section id="d" class="second-step block-width">
+			<div class="last-desc white-bg-col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsa eum, provident. Suscipit similique cum porro eligendi explicabo, quae odio, atque accusamus repellat delectus magnam quos natus rerum, quasi soluta!</p>
+			</div>
+			<div class="step3">
+				<div class="img-step3"></div>
+			</div>
+		</section>
+		<footer class="page-footer block-width white-bg-col">
+			<a href="">about me</a>
+		</footer>
+	</div>
+		
+		<!-- SCRIPTS -->
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="js/parallax.js"></script>
+	    
+	    <script type="text/javascript">
+			$(document).ready(function(){
+	    $(".top-menu").on("click","a", function(event){
+	        event.preventDefault();
+	        var id  = $(this).attr('href'),
+	            top = $(id).offset().top;
+	         
+	        $('body,html').animate({scrollTop: top}, 1000);
+	    });
+	});
+		</script>
+
+	    <script>
+var menu_selector = ".top-menu";
+ 
+function onScroll(){
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " a").each(function(){
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " a.current").removeClass("current");
+            $(this).addClass("current");
+        } else {
+            $(this).removeClass("current");
+        }
+    });
+}
+ 
+$(document).ready(function () {
+ 
+    $(document).on("scroll", onScroll);
+ 
+    $("a[href^=#]").click(function(e){
+        e.preventDefault();
+ 
+        $(document).off("scroll");
+        $(menu_selector + " a.current").removeClass("current");
+        $(this).addClass("current");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+ 
+    });
+ 
+});
+	    </script>
+</body>
+</html>
