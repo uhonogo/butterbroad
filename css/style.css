@@ -243,7 +243,7 @@ footer a {
   color: red;
   text-decoration: none; }
 
-/* =====  media  ===== */
+/* ======  media  ====== */
 
 @media screen and (max-width: 480px){
   .parallax, header, section {
