@@ -177,6 +177,7 @@ h1 {
   overflow: hidden;
   width: 100%;
   background: white url(../images/step2.jpg) no-repeat right top;
+  -webkit-background-size: auto 100%;
   background-size: auto 100%;
   z-index: 1; }
 
@@ -221,8 +222,10 @@ h1 {
   height: 100vh;
   overflow: hidden;
   background: white url(../images/step3.jpg) no-repeat 0 0;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
   background-size: cover;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
   z-index: 1; }
 
 .img-step3 {
