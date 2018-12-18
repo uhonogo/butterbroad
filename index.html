@@ -1,242 +1,537 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html lang="zxx">
+   <head>
+     <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>template</title>
+    <!-- template stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
-	<!-- style -->
-	<style>
-
-		.load {
-			background: #fff;
-			height: 100vh;
-			position: fixed;
-			width: 100vw;
-			z-index: 999999;
-		}
-		.loader {
-			height: 100%;
-			width: 100%;
-		}
-		
-		.loader svg {
-			height: 400px;
-			left: calc(50% - 200px);
-			position: absolute;
-			top: calc(50% - 200px);
-			width: 400px;
-		}
-	</style>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<title>buterbroad</title>
-</head>
-<body>
-<div id="page_loading" class="load">
-  <div class="loader">
-  <?xml version="1.0" encoding="utf-8"?>
-
-<svg version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 630 630" style="enable-background:new 0 0 630 630;" xml:space="preserve">
-<style type="text/css">
-	
-</style>
-<g>
-	<rect x="180.5" y="230" fill="#849d9a" class="rect1" width="50" height="140" ry="20" rx="20">
+  <link href="static/css/style.css" rel="stylesheet"></head>
+  <body id="site" class="site">
     
-  <animate attributeName="y"
-    values="230; 260; 230;"
-    dur="1s"
-    repeatCount="indefinite">
-  </rect>
-	<rect x="253.5" y="220" fill="#fcf0d2" class="rect1" width="50" height="140" ry="20" rx="20">
-    
-  <animate attributeName="y"
-    values="230; 260; 230;"
-    dur="1s"
-    begin="0.2s"
-    repeatCount="indefinite">
-  </rect>
-	<rect x="326.5" y="220" fill="#b27a63" class="rect1" width="50" height="140" ry="20" rx="20">
-    
-  <animate attributeName="y"
-    values="230; 260; 230;"
-    dur="1s"
-    begin="0.4s"
-    repeatCount="indefinite">
-  </rect>
-	<rect x="399.5" y="220" fill="#84B78E" class="rect1" width="50" height="140" ry="20" rx="20">
-    
-  <animate attributeName="y"
-    values="230; 260; 230;"
-    dur="1s"
-    begin="0.6s"
-    repeatCount="indefinite">
-  </rect>
-</g>
-<circle cx="315" cy="315" r="312" fill="none" stroke="#234c64" stroke-width="5" stroke-dasharray="55, 55" >
-<animateTransform attributeName="transform"
-          attributeType="XML"
-          type="rotate"
-          from="0 315 315"
-          to="360 315 315"
-          dur="10s"
-          repeatCount="indefinite" />
-</circle>
-</svg>
-</div>
-  <noscript>
-    <div class="nojs">Please enable <strong>JavaScript</strong> and reload this page
-      <p><a href="http://goo.gl/d5o4zF" target="_blank" rel="nofollow">How enable Javascript</a></p>
-    </div>
-  </noscript>
-</div>
-	<nav class="top-menu">
-        <ul>
-            <li><a class="current" href="#a"></a></li>
-            <li><a href="#b"></a></li>
-            <li><a href="#c"></a></li>
-            <li><a href="#d"></a></li>
-        </ul>
-    </nav>
-	<div class="content">
-		<!-- ******** HEADER ******** -->	
-		<div class="parallax block-width">
-			<div class="img"></div>
-		</div>
-		<header id="a" class="head block-width">
-			<div class="logo">
-				<div class="logoImg"></div>
-			</div>
-			<div class="desc white-bg-col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam blanditiis dolorem dignissimos, quaerat quae officiis velit saepe aliquam voluptates provident explicabo nihil dolore. Dolorum at a nam, sapiente eveniet.</p>
-			</div>
-		</header>
-		
-		<!-- ****** CONTENT ****** -->
-		
-		<section id="b" class="how-cook block-width white-bg-col">
-			<div class="curl">
-				<img src="images/curl-top.svg" alt="curl">
-			</div>
-			<h1>Рецепт:</h1>
-			<div class="row">
-				<div class="column">
-					<ul>
-						<li class="ing">Превый ингридиент:</li>
-						<li class="ing">Воторой ингридиент:</li>
-						<li class="ing">Третий ингридиент:</li>
-					</ul>
-				</div>
-				<div class="column">
-					<ul>
-						<li class="ing-desc">описание первого</li>
-						<li class="ing-desc">описание втогрого</li>
-						<li class="ing-desc">описание третьего</li>
-					</ul>
-				</div>
-			</div>
-			<div class="curl bottom">
-				<img src="images/curl-bottom.svg" alt="curl">
-			</div>
-		</section>
-		<section id="c" class="first-step block-width">
-			<div class="fstp-instr">
-				<div class="fstp-desc white-bg-col">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dicta quisquam similique enim provident delectus reiciendis esse dolores facere amet consequuntur sint tempore consequatur, est fugit pariatur quibusdam quas, nihil?</p>
-				</div>
-			</div>
-		</section>
-		<section id="d" class="second-step block-width">
-			<div class="last-desc white-bg-col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsa eum, provident. Suscipit similique cum porro eligendi explicabo, quae odio, atque accusamus repellat delectus magnam quos natus rerum, quasi soluta!</p>
-			</div>
-			<div class="step3">
-				<div class="img-step3"></div>
-			</div>
-		</section>
-		<footer class="page-footer block-width white-bg-col">
-			<a href="">about me</a>
-		</footer>
-	</div>
-		
-		<!-- SCRIPTS -->
+    <!-- Site Wrapper -->
 
-		<script>
-			// Hide loading overlay <div /> (with spinner) after page complete loading. After hiding,
-//   <div /> will be removed, and for <body> removed css class 'noscroll'
-var _loading_spinner=setInterval(function(){if(document.readyState=='complete'){
-  var $page_loading = document.getElementById('page_loading'),
-      $body = document.body || document.getElementsByTagName('body')[0],
-      speed = 200, delay = 0;
-  if((typeof $page_loading != 'undefined') && ($page_loading != null)){
-    setTimeout(function(){
-      var transition = 'opacity ' + speed.toString() + 'ms ease',
-          removeCssClass = function(obj, className){
-            obj.className = obj.className.replace(className, '').replace('  ', ' ');
-          };
-      ['-webkit-transition','-moz-transition','transition'].forEach(function(prefix){
-        $page_loading.style[prefix] = transition;
-      });
-      $page_loading.style['opacity'] = '0';
-      $page_loading.style['filter']  = 'alpha(opacity=0)';
-      removeCssClass($body, 'noscroll');
-      setTimeout(function(){
-        $page_loading.parentNode.removeChild($page_loading);
-      }, speed + 10);
-    }, delay);
-  }
-  clearInterval(_loading_spinner);
-}},3000);
-		</script>
+    <main id="app">
 
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	    <script src="js/parallax.js"></script>
-	    
-	    <script type="text/javascript">
-			$(document).ready(function(){
-	    $(".top-menu").on("click","a", function(event){
-	        event.preventDefault();
-	        var id  = $(this).attr('href'),
-	            top = $(id).offset().top;
-	         
-	        $('body,html').animate({scrollTop: top}, 1000);
-	    });
-	});
-		</script>
+      <!-- Header Block -->
+      <section class="header bg-dark">
 
-	    <script>
-var menu_selector = ".top-menu";
- 
-function onScroll(){
-    var scroll_top = $(document).scrollTop();
-    $(menu_selector + " a").each(function(){
-        var hash = $(this).attr("href");
-        var target = $(hash);
-        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
-            $(menu_selector + " a.current").removeClass("current");
-            $(this).addClass("current");
-        } else {
-            $(this).removeClass("current");
-        }
-    });
-}
- 
-$(document).ready(function () {
- 
-    $(document).on("scroll", onScroll);
- 
-    $("a[href^=#]").click(function(e){
-        e.preventDefault();
- 
-        $(document).off("scroll");
-        $(menu_selector + " a.current").removeClass("current");
-        $(this).addClass("current");
-        var hash = $(this).attr("href");
-        var target = $(hash);
- 
-    });
- 
-});
-	    </script>
-</body>
+        <div class="logo">
+          <img src="./static/svg/logos/site_logo_1.svg" alt="site-logo">
+        </div>
+
+        <div class="head_image">
+          <img src="./static/images/model-1.jpg" alt="header-image">
+        </div>
+
+        <div class="header-content vertical-middle middle">
+          <div class="container-fluid">
+
+            <div class="title">
+
+              <h1 class="text-center">
+                <span class="c-block">Product name</span>
+                <span class="d-block text-white sub_title">Buy now and get <b class="color-red">30%</b> discount</span>
+              </h1>
+              <div class="form-block">
+                <div class="show_form-btn">
+                  <div class="button show-form light-violet">fast order<span class="arrow"></span></div>
+                </div>
+
+                <form class="form">
+                  <div class="row justify-content-around">
+
+                    <div class="form-group">
+                      <input type="email" id="staticEmail2" class="form-control" value="email@example.com">
+                    </div>
+                    
+                    <div class="form-group">                    
+                      <input type="text" id="inputPassword2" class="form-control" placeholder="What is your name">
+                    </div>
+
+                    <div class="form-group">
+                      <button type="submit" class="btn orange-gradient">order now</button>
+                    </div>
+                    
+                  </div>
+                  
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </section><!-- Header Block END -->
+
+      <!-- About Block -->
+      <section class="about grey-gradien">
+
+        <h2 class="red_header text-center">Description</h2>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-6 order-2 order-md-1">
+                <p class="middle text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+              <div class="col-12 col-md-6 order-1 order-md-2">
+                <div class="image-block">
+                  <img class="smooth-animation" src="./static/svg/macbook_1.svg" alt="devices">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- About Block END -->
+      
+      <!-- About Block -->
+      <section class="goods-advantages">
+
+        <h2 class="red_header text-center">Main features</h2>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-12 col-md-6">
+                <div class="image">
+                  <img src="./static/svg/macbook.svg" alt="devices">
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-6">
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="adventages-wrap">
+                  <div class="row">
+                    
+                    <div class="col-6 col-sm-3">
+                      <figure class="icon-content icon-speed-content">
+                        <div class="icon-image icon-speed">
+                          <img src="./static/svg/optimization.svg" alt="icon-speed">
+                        </div>
+                        <figcaption class="icon-caption caption-icon-speed">
+                          <h4>Speed</h4>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3">
+                      <figure class="icon-content icon-speed-content">
+                        <div class="icon-image icon-speed">
+                          <img src="./static/svg/locked.svg" alt="icon-speed">
+                        </div>
+                        <figcaption class="icon-caption caption-icon-speed">
+                          <h4>Protected</h4>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    
+                    <div class="col-6 col-sm-3">
+                      <figure class="icon-content icon-speed-content">
+                        <div class="icon-image icon-speed">
+                          <img src="./static/svg/share.svg" alt="icon-speed">
+                        </div>
+                        <figcaption class="icon-caption caption-icon-speed">
+                          <h4>Sharing</h4>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                      <figure class="icon-content icon-speed-content">
+                        <div class="icon-image icon-speed">
+                          <img src="./static/svg/energy.svg" alt="icon-energy">
+                        </div>
+                        <figcaption class="icon-caption caption-icon-speed">
+                          <h4>Energy</h4>
+                        </figcaption>
+                      </figure>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section><!-- About Block END -->
+
+      <!-- Advantages Block -->
+      <section class="advantages pricing animate-wrap">
+
+        <h2 class="red_header text-center">Choose your plan</h2>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              
+              <div class="col-12 col-md-4">
+                <div class="adv-wrap bg-light animate up-move">
+                  <div class="title">
+                      <h3>
+                        Strater plan
+                      </h3>
+                  </div>
+                  <div class="proposition">
+
+                    <div class="image">
+                      <img src="./static/svg/plan_photo_1.svg" alt="plus">
+                    </div>
+
+                  </div>
+                  <div class="iformation">
+                    <span class="icon"><i class="fas fa-info-circle"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem in sunt nemo, laudantium ducimus autem voluptates.</p>
+                    <div class="d-block price"><del>$50</del> $35</div>
+                  </div>
+                  <div class="orderIt">
+                    <div class="btn button light-violet">order it</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-4">
+                <div class="adv-wrap animate shadow-lg recommended up-move">
+                  <div class="title">
+                      <h3>
+                        Medium plan
+                      </h3>
+                  </div>
+                  <div class="proposition">
+
+                    <div class="image">
+                      <img src="./static/svg/plan_photo_2.svg" alt="plus">
+                    </div>
+
+                  </div>
+                  <div class="iformation">
+                    <span class="icon"><i class="fas fa-info-circle"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem in sunt nemo, laudantium ducimus autem voluptates.</p>
+                    <div class="d-block price"><del>$60</del> $42</div>
+                  </div>
+                  <div class="orderIt">
+                    <div class="btn button light-violet">order it</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-4">
+                <div class="adv-wrap bg-light animate up-move">
+                  <div class="title">
+                    <h3>
+                      Ultimate plan
+                    </h3>
+                  </div>
+                  
+                  <div class="proposition">
+
+                    <div class="image">
+                      <img src="./static/svg/plan_photo.svg" alt="plus">
+                    </div>
+
+                  </div>
+                  <div class="iformation">
+                    <span class="icon"><i class="fas fa-info-circle"></i></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem in sunt nemo, laudantium ducimus autem voluptates.</p>
+                    <div class="d-block price"><del>$70</del> $49</div>
+                  </div>
+                  <div class="orderIt">
+                    <div class="btn button light-violet">order it</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Advantages Block END -->
+
+      <!-- Content_form Block -->
+      <section class="content_form">
+
+        <div class="content">
+          
+          <div class="image_background col-12 col-md-6">
+            <img src="./static/images/background/low-poly-2805310_1280.jpg" alt="holiday">
+          </div>
+
+          <div class="form_wrap">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <div class="text-center text-md-left middle social-block">
+                    <h3>Fast order</h3>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="form_wrap_block">
+                      <div class="form bg-white">
+                        <form class="form_block middle">
+                          
+                          <div class="row">
+                            <div class="col-12 col-md-5">
+                              <div class="form-group">
+                                <label class="form-label" for="email-content">e-mail</label>
+                                <input type="email" class="form-control" id="email-content" placeholder="e-mail">
+                              </div>
+            
+                              <div class="form-group mb-none">
+                                <label class="form-label" for="name-content">name</label>
+                                <input type="text" id="name-content" class="form-control" placeholder="name">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                              <button type="submit" class="btn orange-gradient middle">order</button>
+                            </div>
+                          </div>
+        
+                        </form>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section><!-- Content_form Block END -->
+
+      <!-- Gallery Block -->
+      <section class="gallery">
+          
+        <h2 class="red_header text-center">Gallery</h2>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row justify-content-around">
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/digital-marketing-1433427_640.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/mobile-605422_640.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/apple-606761_640.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/mobile-616012_640.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/imac-606765_640.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="photo_wrap">
+                  <img src="./static/images/gallery/mpc.jpg" alt="devices">
+                  <div class="photo_socLinks d-flex">
+                    <div class="icons align-self-center">
+                      <div class="d-block social-wrap"><i class="fab fa-twitter"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-facebook-square"></i></div>
+                      <div class="d-block social-wrap"><i class="fab fa-instagram"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- Gallery Block END -->
+
+      <!-- Reviews Block -->
+      <section class="reviews animate-comment-wrap">
+
+        <h2 class="red_header text-center">Our customers say</h2>
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="commet animate left-move">
+                  
+                  <div class="top-block">
+                    <div class="row">
+                      
+                      <div class="image">
+                        <img src="./static/images/adult-black-and-white-casual-308248.jpg" alt="">
+                      </div>
+
+                      <div class="title">
+                        <h3 class="redName">Antonia Mary</h3>
+                        <span class="date">01.04.18</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="comment_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae officiis, fugit aspernatur natus nisi odit perferendis temporibus omnis! Nulla quidem earum quos! Laboriosam quam maxime qui ducimus doloremque fuga...</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="commet animate left-move">
+                  
+                  <div class="top-block">
+                    <div class="row">
+                      
+                      <div class="image">
+                        <img src="./static/images/attractive-beautiful-beauty-354951.jpg" alt="">
+                      </div>
+
+                      <div class="title">
+                        <h3 class="redName">Lesley Stephany</h3>
+                        <span class="date">04.04.18</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="comment_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae officiis, fugit aspernatur natus nisi odit perferendis temporibus omnis! Nulla quidem earum quos! Laboriosam quam maxime qui ducimus doloremque fuga...</p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="commet animate left-move">
+                  
+                  <div class="top-block">
+                    <div class="row">
+                      
+                      <div class="image">
+                        <img src="./static/images/black-and-white-fun-happy-91227.jpg" alt="">
+                      </div>
+
+                      <div class="title">
+                        <h3 class="redName">Bob Johnson</h3>
+                        <div class="date"><span>16.04.18</span></div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="comment_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae officiis, fugit aspernatur natus nisi odit perferendis temporibus omnis! Nulla quidem earum quos! Laboriosam quam maxime qui ducimus doloremque fuga...</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="go-to-top">
+            <div class="button btn orange-gradient"><a href="#app">move up</a></div>
+          </div>
+        </div>
+
+      </section><!-- Reviews Block END -->
+
+      <!-- Footer Block -->
+      <footer class="footer">
+        <div class="site-content">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="social-links middle">
+                  <div class="d-inline social-wrap"><i class="fab fa-twitter"></i></div>
+                  <div class="d-inline social-wrap"><i class="fab fa-facebook-square"></i></div>
+                  <div class="d-inline social-wrap"><i class="fab fa-instagram"></i></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <form class="form_block">
+
+                  <div class="form-group">
+                    <h3>
+                      <span class="d-block">Order now:</span>
+                    </h3>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="form-group col-12 col-md-auto">
+                      <input type="email" class="form-control" placeholder="e-mail">
+                    </div>
+    
+                    <div class="form-group col-12 col-md-auto">
+                      <input type="text" class="form-control" placeholder="name">
+                    </div>
+
+                    <button type="submit" class="btn">order</button>
+                  </div>
+
+                </form>
+              </div>
+          </div>
+        </div>
+      </footer><!-- Footer Block END -->
+
+    </main>
+
+    <!-- built files will be auto injected -->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script defer="defer" src="./static/js/jquery.js"></script>
+    <script defer="defer" src="./static/js/index.js"></script>
+    <script defer="defer" src="./static/js/parallax.js"></script>
+  <script type="text/javascript" src="static/js/manifest.37a2ecbb1d1b7e6c9ada.js"></script><script type="text/javascript" src="static/js/vendor.cd2a520b24453594855c.js"></script><script type="text/javascript" src="static/js/app.099dee41344d6c6398aa.js"></script></body>
 </html>
